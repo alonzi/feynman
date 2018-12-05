@@ -4,7 +4,7 @@ A repo of feynman diagrams and the means of production.
 ## usage
 * set permissions on make_diagram.sh
   * <pre> chmod 700 make_diagram.sh </pre>
-* run make_diagram.sh to produce a default diagram
+* run make_diagram.sh to produce the default diagram
   * <pre> ./make_diagram.sh </pre> 
   * find result in <pre> diagram-crop.pdf </pre>
 * to make a different diagram edit a tex file and pass it at the command line
