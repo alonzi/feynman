@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{feynmp}
+\usepackage{pst-pdf}
+\pagestyle{empty}
+
+\begin{document}
+\unitlength = 1mm
+% determine the unit for the size of diagram.
+
+\begin{postscript}
+\begin{fmffile}{x}
+\begin{fmfgraph}(40,25)
+% Note that the size is given in normal parentheses
+% instead of curly brackets.
+% Define external vertices from bottom to top
+
+
+% include diagram details here
+\ifdefined\todraw
+  \input{\todraw}
+\else
+  \fmfleft{i1,i2}
+  \fmfright{o1,o2}
+  \fmf{fermion}{i1,v1,o1}
+  \fmf{fermion}{i2,v2,o2}
+  \fmf{photon}{v1,v2}
+\fi
+
+
+\end{fmfgraph}
+\end{fmffile}
+\end{postscript}
+
+\end{document}
