@@ -1,5 +1,5 @@
 # feynman
-A repo of feynman diagrams
+A repo of feynman diagrams and the means of production.
 
 ## usage
 * set permissions on make_diagram.sh
