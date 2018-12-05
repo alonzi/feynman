@@ -10,7 +10,6 @@ A repo of feynman diagrams and the means of production.
 * to make a different diagram edit a tex file and pass it at the command line
   * edit schannel.tex 
   * <pre> ./make_diagram.tex schannel.tex </pre>
-  * eg: make_diagram.sh schannel.tex
   * find result in <pre> diagram-crop.pdf </pre>
 
 ## references
