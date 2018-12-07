@@ -6,7 +6,7 @@
 
 
 \fmf{fermion,tension=3,label=$p$}{i1,vl}
-\fmf{fermion,label=$p'$}{vl,o6}
+\fmf{fermion,label=$p'$,tension=1.55}{vl,o6}
 %\fmffreeze
 
 \fmf{phantom,tension=3}{t1,v0}
@@ -19,8 +19,19 @@
 
 \fmf{fermion}{v0,o4}
 
-\fmf{photon,tension=1.5,label=$\gamma$}{vl,o2}
+\fmf{photon,tension=1.5,label=$\gamma$,label.dist=-10}{vl,o2}
 
 
 
-\fmfblob{.2w}{vl}
+%\fmfblob{.2w,filled=empty}{vl}
+\fmfv{decor.shape=circle,decor.filled=empty,decor.size=.2w}{vl}
+
+\fmf{phantom}{t1,vblob}
+\fmf{phantom,tension=1.013}{o4,vblob}
+\fmf{phantom,tension=1.1}{d1,vblob}
+\fmf{phantom,tension=1.013}{d2,vblob}
+%\fmflabel{$T_{\mu\nu}$}{vblob}
+
+\fmf{phantom,label.dist=0,label=$T_{\mu\nu}$}{l11,o6}
+
+
