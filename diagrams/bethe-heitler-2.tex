@@ -1,0 +1,26 @@
+
+\fmfleft{l1,l2,ld,l3,l4}
+\fmftop{t1,t2,t3,t4,t5}
+\fmfbottom{b1,b2,b3,b4}
+\fmfright{r1,r2,r3,rd,r4}
+
+
+% incoming 2 fermions
+\fmf{fermion,tension=3}{l2,v1}
+\fmf{fermion,tension=5}{l3,v2}
+
+% outgoing 2 fermions, 1 boson
+\fmf{fermion,tension=2.75}{v1,r2}
+\fmf{photon,tension=2}{v2,r3}
+\fmf{fermion,tension=3}{v3,t4}
+
+% internals 1 fermion, 1 boson
+\fmf{fermion,tension=1}{v2,v3}
+\fmf{photon,tension=1.5}{v1,v3}
+
+% blob
+\fmfv{decor.shape=circle,decor.filled=empty,decor.size=.15w}{v1}
+\fmf{phantom,label.dist=-13,label=$J_{\mu}$}{l2,r2}
+
+% phantoms
+\fmf{phantom,tension=1.5}{v3,t3}
