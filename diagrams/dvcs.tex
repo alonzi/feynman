@@ -1,37 +1,25 @@
 
-\fmfleft{l1,l11,l2,l3}
-\fmftop{i2,t1,o4,t0}
-\fmfbottom{i1,d1,d2,o1}
-\fmfright{o0,o6,o2,o3}
+\fmfleft{l1,l2,l3,l4}
+\fmftop{t1,t2,t3,t4}
+\fmfbottom{b1,b2,b3,b4}
+\fmfright{o1,o2,o3,o4}
 
+% incoming 2 fermions
+\fmf{fermion,tension=3,label=$p$}{b1,vl}
+\fmf{fermion}{l3,v0}
 
-\fmf{fermion,tension=3,label=$p$}{i1,vl}
-\fmf{fermion,label=$p'$,tension=1.55}{vl,o6}
-%\fmffreeze
+% outgoing 2 fermions, 1 boson
+\fmf{fermion,label=$p'$,tension=1.55}{vl,o2}
+\fmf{fermion}{v0,t3}
+\fmf{photon,tension=1.5,label=$\gamma$,label.dist=-10}{vl,o3}
 
-\fmf{phantom,tension=3}{t1,v0}
-\fmf{phantom}{d1,v0}
-
-\fmf{fermion}{l2,v0}
-
+% internals 1 boson
 \fmf{photon,tension=0.5,label=$\gamma^{*}(q)$}{v0,vl}
-%\fmf{photon,tension=1,label=$a$}{v0,vl}
 
-\fmf{fermion}{v0,o4}
-
-\fmf{photon,tension=1.5,label=$\gamma$,label.dist=-10}{vl,o2}
-
-
-
-%\fmfblob{.2w,filled=empty}{vl}
+% blob
 \fmfv{decor.shape=circle,decor.filled=empty,decor.size=.2w}{vl}
+\fmf{phantom,label.dist=0,label=$T_{\mu\nu}$}{l2,o2}
 
-\fmf{phantom}{t1,vblob}
-\fmf{phantom,tension=1.013}{o4,vblob}
-\fmf{phantom,tension=1.1}{d1,vblob}
-\fmf{phantom,tension=1.013}{d2,vblob}
-%\fmflabel{$T_{\mu\nu}$}{vblob}
-
-\fmf{phantom,label.dist=0,label=$T_{\mu\nu}$}{l11,o6}
-
-
+% phantoms
+\fmf{phantom,tension=3}{t2,v0}
+\fmf{phantom}{b2,v0}
