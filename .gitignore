@@ -1,3 +1,11 @@
+# my additions
+.DS_Store
+diagram-crop.pdf
+diagram-pics.pdf
+diagram-pics.ps
+diagram.pdf
+*~
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
