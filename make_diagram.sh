@@ -4,6 +4,8 @@
 # -rw-r--r--  1 lpa2a  staff   469B Dec  4 19:32 diagram.tex
 
 # usage: ./make_diagram.sh test.tex
+# or to use diagram.tex
+# usage: ./make_diagram.sh
 
 if [ $1 ]
 then
@@ -23,4 +25,5 @@ then
     ps2pdf diagram-pics.ps
     pdflatex $str
     pdfcrop diagram.pdf
+    ./pdf2png.sh
 fi
