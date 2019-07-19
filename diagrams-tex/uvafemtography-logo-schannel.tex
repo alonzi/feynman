@@ -20,16 +20,16 @@
 \ifdefined\todraw
   \input{\todraw}
 \else
-  \fmfleft{i2,i1}
-  \fmfright{o2,o1}
-  \fmf{photon}{i1,v1,o1}
-  \fmf{fermion}{i2,v1,o2}
+  \fmfleft{i1,i2}
+  \fmfright{o1,o2}
+  \fmf{photon}{i1,v1,i2}
+  \fmf{fermion}{o1,v1,o2}
   \fmfv{d.sh=circle,d.f=empty,d.si=.5w}{v1}
   \fmffreeze
-  \fmfi{plain}{vpath (__i2,__v1) shifted (thick*(-1,2))}
-  \fmfi{plain}{vpath (__i2,__v1) shifted (thick*(1,-2))}
-  \fmfi{plain}{vpath (__v1,__o2) shifted (thick*(1,2))}
-  \fmfi{plain}{vpath (__v1,__o2) shifted (thick*(-1,-2))}
+  \fmfi{plain}{vpath (__o1,__v1) shifted (thick*(1,2))}
+  \fmfi{plain}{vpath (__o1,__v1) shifted (thick*(-1,-2))}
+  \fmfi{plain}{vpath (__v1,__o2) shifted (thick*(-1,2))}
+  \fmfi{plain}{vpath (__v1,__o2) shifted (thick*(1,-2))}
 \fi
 
 
